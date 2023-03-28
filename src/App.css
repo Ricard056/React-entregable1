@@ -1,0 +1,100 @@
+:root {
+    /* --Resolution1_Width_Fondo: 853px;
+    --SizeMonitor1_Mobile: 250px;
+    --SizeMonitor2_Cell: 400px; */
+    --SizeMonitor3_Tablet: 700px;
+    /* --SizeMonitor4_General: 1024px; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+    min-height: 100%;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-height: 100vh;
+
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 1rem;
+}
+
+.App__tittle {
+    text-align: center;
+    font-size: 2.25rem;
+    letter-spacing: 2px;
+    margin-bottom: 4%;
+    margin-top: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.App__pathclip {
+    position: relative;
+    min-height: 7.5rem;
+    max-width: 90%;
+    padding: 0 1rem;
+    margin-bottom: 4%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* clip-path: polygon(0% 0%, 13% 10%, 32% 11%, 48% 9%, 66% 3%, 80% 6%, 86% 11%, 100% 20%, 100% 100%, 91% 96%, 80% 91%, 66% 92%, 51% 96%, 36% 100%, 14% 98%, 0% 92%); */
+    clip-path: polygon(0% 4%, 4% 6%, 11% 8%, 19% 9%, 31% 8%, 40% 6%, 49% 3%, 59% 1%, 69% 3%, 78% 6%, 85% 8%, 95% 11%, 100% 12%, 100% 97%, 96% 97%, 88% 94%, 80% 91%, 71% 89%, 62% 90%, 56% 92%, 49% 97%, 39% 99%, 30% 99%, 20% 98%, 11% 95%, 0% 91%);
+}
+
+.App__phrases {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    overflow-wrap: break-word;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    padding: 1.9rem 0rem;
+}
+
+.App__btn {
+    display: block;
+    background-color: #1a1a1a;
+    color: #ffffffda;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    text-align: center;
+
+    margin-bottom: 20%;
+    margin-top: 02%;
+}
+
+@media (min-width: 853px) {
+    .App {
+        background-size: 100% 100%;
+    }
+
+    .App__pathclip {
+        max-width: 650px;
+    }
+
+    .App__phrases {
+        max-width: var(--SizeMonitor3_Tablet);
+        text-align: center;
+        padding: 0 1rem;
+        margin-bottom: 4%;
+    }
+}
